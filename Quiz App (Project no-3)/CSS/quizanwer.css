@@ -1,0 +1,128 @@
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    margin: 0; 
+    background-color: rgb(181, 135, 224);
+}
+
+.app{
+    /* border: solid black 1px; */
+    width: 600px;
+    height: 520px;
+    text-align: center;
+    box-shadow: 0 0 25px 0 black;
+    background-color: #acd7ec;
+    border-radius: 10px;
+}
+.apptest{
+    text-align: center;
+    
+}
+.appno{
+    display: flex;
+    justify-content: space-between;
+     border-radius: 50%;
+     margin-left: 5%;
+     
+}
+.score {
+    background-color: rgb(178, 208, 71); 
+    padding: 10px 10px;
+    border-radius: 50px; 
+    
+}
+.appno h3{
+    justify-content: center;
+    font-size: 25px;
+    
+   
+}
+#timer{
+    background-color: rgb(178, 208, 71); 
+    padding: 10px 10px;
+    border-radius: 50px;  
+    margin-right: 6%;
+    color: #000000;
+}
+
+ /*this is my all questions css section*/
+
+#question{                    
+    border: 1px solid rgb(64, 59, 59);
+    width: 90%;
+    margin: 5%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+}
+
+  /*this is my button section*/
+
+.btn{                   
+    margin: 2%;
+    width: 40%;
+    height: 50px;
+    border-radius: 10px;
+    background-color:rgb(79, 136, 241);
+    color: white;
+    font-weight: 525;
+}
+.btn:hover{
+    background-color:  rgb(178, 208, 71);
+    color: black;
+}
+
+ /*this is my total question css section*/
+
+.noto {                         
+    border-radius: 50%;
+    background-color: rgb(178, 208, 71);
+    height: 50px;
+    width: 50px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ /*here i used media query*/
+
+@media only screen and (max-width: 720px) {    
+    .noto {
+        border-radius: 50%;
+        background-color: blue;
+        height: 50px;
+        width: 50px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+    }
+  }
+#nextquestion {
+    justify-content: center;
+    width: auto;
+    height: 50px;
+    color: white;
+    background-color: rgb(79, 136, 241);
+    cursor: pointer;
+    border-radius: 10px;
+}
+#nextquestion:hover{
+    background-color:  rgb(178, 208, 71);
+    color: black;
+}
+
+

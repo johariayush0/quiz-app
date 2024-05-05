@@ -1,0 +1,63 @@
+                           
+                           
+                <!------------------------first page Started here--------------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/quiz.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="../img/testbook-pass.webp" alt="photo"> <!--this is my logo of testbook-->
+        </div>
+        <div class="hello">
+            <h1>Hello user!</h1>
+        </div>
+        <div class="Enter">
+            <p>Enter Your Name to Continue the Quiz app</p>
+        </div>
+        <div class="inputform">
+            <form id="form">
+                <!--this is my input and enter button-->
+                <input type="text" name="name" id="name" placeholder="ENTER YOUR NAME."> <!--this is my input field-->
+                <button type="button" id="btu">ENTER</button> <!--this is my first button to enter the quiz-->
+            </form>
+            <div class="You">
+                <p>You have 10 seconds to answer each question......</p>
+            </div>
+            <hr>
+            <div class="namedisplay" id="namedisplay"></div>
+            <div class="select3">
+                <!--second line starts here-->
+                <h1>Select Category</h1>
+            </div>
+            <div class="select1">
+                  <!--this is my categery section -->
+                <h3><a href="../HTML/newpage.html">HTML</a></h3>  
+                <h3><a href="../HTML/newpage1.html">CSS</a></h3>
+            </div>
+            <div class="select2">
+                <h3><a href="../HTML/quizanswer.html">Java Script</a></h3>
+                <h3><a href="../HTML/newpage2.html">AI</a></h3><!--4th page Answer-->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        <!--User name display in the result-->
+        document.getElementById('btu').addEventListener('click', function () { // there is my button is called
+            const Name = document.querySelector('#name').value;
+            document.querySelector('#namedisplay').textContent = Name;
+            localStorage.setItem('name', Name);
+        });
+    </script>
+</body>
+
+</html>

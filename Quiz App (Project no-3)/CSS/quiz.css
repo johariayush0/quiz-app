@@ -1,0 +1,101 @@
+body{               /*this is front part of the quiz css point here... */
+    display: flex;
+        justify-content: center;
+        background-color: rgb(181, 135, 224);
+    }
+    .container {
+        /* border: solid black 1px;   */
+        background-color: #acd7ec;
+        text-align: center;
+        width: 700px;
+       box-shadow: 0 0 25px 0 black;
+       border-radius: 10px;
+    }
+    .hello{
+        margin-top: 5%;
+        color: rgb(79, 136, 241);;
+    }
+     
+        /*this is my logo css */ 
+
+    .image img{                     
+        width: 50%;
+        height: 200px;
+    }
+    
+    /*this is input field here where user input the name*/
+
+    .inputform input {            
+        width: 400px;
+        height: 30px;
+        border-radius: 8%;
+        border: solid #111 1px;
+    }
+
+     /*this is my button section*/
+    
+    #btu {                     
+        width: 100px;
+        height: 35px;
+        background-color: rgb(79, 136, 241);
+        color: #fff;
+        border-radius: 10px;
+    }
+    #btu:hover{
+        background-color: rgb(178, 208, 71);
+        color: #111;
+        cursor: pointer;
+    }
+
+    /*this is my categery section*/
+    
+    .select1 {                  
+      display: flex;
+    }
+    .select1 h3{
+        border: 1.5px solid black;
+        background-color: rgb(79, 136, 241);
+        color: white;
+        width: 300px;
+        height: 50px;
+        margin-left: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        border-radius: 10px;
+    }
+    .select1 h3 a {
+        color: white;
+    }
+    .select1 h3:hover{
+        background-color: rgb(178, 208, 71);
+        cursor: pointer;
+    }
+    
+    .select2 {
+        display: flex;
+      }
+      .select2 h3{
+          border: 1.5px solid black;
+          background-color: rgb(79, 136, 241);
+          width: 300px;
+          height: 50px;
+          margin-left: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;  
+          border-radius: 10px;  
+    }
+    .select2 h3 a {
+        color: whitesmoke;
+    }
+      .select2 h3:hover{
+        background-color: rgb(178, 208, 71);
+        cursor: pointer;
+    }
+      .select3{
+        color: rgb(12, 135, 206);
+    }
+    
+     
+    

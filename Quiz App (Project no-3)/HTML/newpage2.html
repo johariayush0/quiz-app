@@ -1,0 +1,34 @@
+<!--4th page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/quizanwer.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div class="app">
+        <div class="apptest"><p><b>Welcome to Quiz Contest...!!</b></p></div>
+        <div class="appno">
+            <h3><span class="score">SCORE: 0</span></h3>
+            <h3 id="timer">10</h3> <!-- Add a new element for the timer countdown -->
+        </div>
+        <div class="quiz">
+            <h2 id="question">Question 1: What does the term AI stand for?</h2>
+            <div class="answer-ques">
+                <button class="btn" onclick="checkAnswer(this)">Automated Intelligence</button>
+                <button class="btn" onclick="checkAnswer(this)">Automated Inference</button><br>
+                <button class="btn" onclick="checkAnswer(this)">Artificial Intelligence</button>
+                <button class="btn" onclick="checkAnswer(this)">Algorithmic Inference</button>
+            </div>
+            <button id="nextquestion" onclick="nextQuestion()">Next Question</button>
+        </div>
+    </div>
+    <div class="noto">
+        <h3 id="progress">1/10</h3>
+    </div>    
+
+    <script src="../Java Script/newanswer2.js"></script>
+</body>
+</html>

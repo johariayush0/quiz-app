@@ -1,0 +1,54 @@
+<!--this is my result page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..//CSS/quizresult.css">
+    <title>Quiz Result</title>
+</head>
+<body>
+    <div class="filex">
+        <div id="vvvvv">
+            <h3>Quiz Result:</h3><!-- Changed from p to h3 for consistency -->
+        </div>
+        <div class="totalno">
+            <p>Total Time Taken: <span id="totalTime">0 seconds</span></p><!--this is user time taken-->
+        </div>
+        <div class="TotalQuestion">
+            <p>Total Questions: <span id="totalQuestions">0</span></p>
+        </div>
+        <div class="attempt">
+            <p>Total Attempted: <span id="attemptedQuestions">0</span></p>
+        </div>
+        <div class="fullname">
+            <p>Full Name <span id="namedisplay"></span>!</p>
+        </div>
+        <div class="pass-fail">
+            <p>Pass/Fail: <span id="passFail"></span></p>
+        </div>
+        <div class="correct">
+            <p>Correct Answers: <span id="correctAnswers">0</span></p>
+        </div>
+        <div class="wrong">
+            <p>Wrong Answers: <span id="wrongAnswers">0</span></p>
+        </div>
+        <div class="precentage">
+            <p>Percentage: <span id="percentage">0%</span></p>
+        </div>
+        <div class="exam">
+            <!--this is my button and end of the quiz-->
+            <button><a href="../HTML/quiz.html">Home</a></button>
+            <button><a href="../HTML/quizanswer.html">Try Again</a></button>
+        </div>
+    </div>
+    <!--this is my result java script file attached-->
+    <script src="../Java Script/quizresult.js"></script> 
+    <script>
+              const name = localStorage.getItem('name');
+        if (name) {
+            document.getElementById('namedisplay').textContent = name;
+        }
+    </script>
+</body>
+</html>
